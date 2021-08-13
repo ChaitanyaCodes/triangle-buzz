@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles.css">
+    <title>Triangle Buzz</title>
+  </head>
+  <body>
+    <header class="header"><h1 class="header-title">Triangle Buzz</h1></header>
+    <nav>
+      <ul class="nav-list">
+        <li class="nav-list-item" id="angles">Angles of triangle?</li>
+        <li class="nav-list-item" id="area">Check area of triangle</li>
+        <li class="nav-list-item" id="hypotenuse">Check hypotenuse</li>
+        <li class="nav-list-item" id="quiz">Triangle quiz</li>
+      </ul>
+    </nav>
+
+    <main>
+      <section class="triangle-angles-sum">
+        <div class="container">
+          <p>
+            Enter the angles in the input boxes below and know if those angles
+            makeup a triangle.
+          </p>
+          <form class="triangle-angles-form">
+            <label for="angle-a">a:</label
+            ><input type="number" id="angle-a" class="input" />
+            <label for="angle-b">b:</label
+            ><input type="number" id="angle-b" class="input" />
+            <label for="angle-c">c:</label
+            ><input type="number" id="angle-c" class="input" />
+            <button>Submit</button>
+          </form>
+          <p class="message-area"></p>
+        </div>
+      </section>
+
+      <section class="triangle-area">
+        <div class="container">
+          <p>
+            Enter the lengths of all three sides of a triangle to find its area.
+          </p>
+          <form class="triangle-area-form">
+            <label for="side-a">a:</label
+            ><input type="number" id="side-a" class="input" />
+            <label for="side-b">b:</label
+            ><input type="number" id="side-b" class="input" />
+            <label for="side-c">c:</label
+            ><input type="number" id="side-c" class="input" />
+            <button>Submit</button>
+          </form>
+          <p class="message-area"></p>
+        </div>
+      </section>
+
+      <section class="triangle-hypotenuse">
+        <div class="container">
+          <p>
+            Enter the length of the other two sides of the triangle to find the
+            hypotenuse.
+          </p>
+          <form class="triangle-hypotenuse-form">
+            <label for="side-a">a:</label
+            ><input type="number" id="side-a" class="input" />
+            <label for="side-b">b:</label
+            ><input type="number" id="side-b" class="input" />
+            <button>Submit</button>
+          </form>
+          <p class="message-area"></p>
+        </div>
+      </section>
+
+      <section class="triangle-quiz">
+        <div class="container">
+          <h4>Each question carries 10 marks.</h4>
+          <form class="triangle-hypotenuse-form">
+            <div class="question-box">
+              <p>Is the triangle: 100, 60, 20 an Obtuse angle triangle?</p>
+              <input type="radio" /><label for="">Yes</label>
+              <input type="radio" /><label for="">No</label>
+            </div>
+            <div class="question-box">
+              <p>Is the triangle: 90o, 30o, 60o a Right angle triangle?</p>
+              <input type="radio" /><label for="">Yes</label>
+              <input type="radio" /><label for="">No</label>
+            </div>
+            <div class="question-box">
+              <p>Is the triangle: 95o, 40o, 45o an Acute angle triangle?</p>
+              <input type="radio" /><label for="">Yes</label>
+              <input type="radio" /><label for="">No</label>
+            </div>
+            <div class="question-box">
+              <p>The two angles of a traingle are 25o & 80o, what will be the third angle?</p>
+              <input type="radio" /><label for="">40</label>
+              <input type="radio" /><label for="">62</label>
+              <input type="radio" /><label for="">75</label>
+            </div>
+            <div class="question-box">
+              <p>The base angles of Isosceles traingle is 50o. What will be the third angle?</p>
+              <input type="radio" /><label for="">50</label>
+              <input type="radio" /><label for="">60</label>
+              <input type="radio" /><label for="">80</label>
+            </div>
+            <div class="question-box">
+              <p>Which of the following angle will make Equilateral triangle?</p>
+              <input type="radio" /><label for="">30</label>
+              <input type="radio" /><label for="">60</label>
+              <input type="radio" /><label for="">90</label>
+            </div>
+            <button>Submit</button>
+          </form>
+          <p class="score"></p>
+        </div>
+      </section>
+    </main>
+
+    <script src="./main.js"></script>
+  </body>
+</html>
