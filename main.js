@@ -114,7 +114,6 @@ const questionBox = document.querySelectorAll(".question-box");
 const scoreBox = document.querySelector(".score");
 
 const correctAnswers = ["yes", "yes", "no", "100", "50", "60"];
-let score= 0;
 
 quizForm.addEventListener('submit', handleFormSubmition);
 
@@ -122,13 +121,14 @@ function handleFormSubmition(e){
     e.preventDefault();
     const formData = new FormData(quizForm);
     let index = 0;
+    let score= 0;
     for(let value of formData.values()){
         if(value == correctAnswers[index]) {
-            questionBox[index].style.backgroundColor = "lightgreen";
+            questionBox[index].style.backgroundColor = "#32CC51";
             score += 10;
         }
         else{
-            questionBox[index].style.backgroundColor = "pink";
+            questionBox[index].style.backgroundColor = "#FF5361";
         }
             index++;
     }
