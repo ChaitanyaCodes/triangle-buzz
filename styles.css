@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@600;800&display=swap');
+
+:root {
+    --black-primary: #0c0e0c;
+    --red-secondary: #d8323c;
+    --white-primary-text: #eaebea;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Manrope', sans-serif;
+    background-color: var(--black-primary);
+    color: var(--white-primary-text);
+}
+
+.header {
+    background-color: var(--black-primary);
+    color: var(--red-secondary);
+    padding: 1.125rem;
+}
+
+.header-title {
+    text-align: center;
+    font-weight: bolder;
+}
+
+.nav {
+    background-color: var(--red-secondary);
+    color: var(--black-primary);
+    padding: 1.2rem;
+}
+
+.nav-list{
+    max-width: 700px;
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    list-style: none;
+    font-weight: bold;
+}
+
+.nav-list-item{
+    color: var(--white-primary-text);
+    background-color: var(--black-primary);
+    cursor: pointer;
+    padding: .3rem .9rem;
+    margin: .5rem 1.125rem;
+    text-align: center;
+    border-radius: 1rem;
+}
+
+.nav-list-item:active, .nav-list-item:focus {
+    opacity: 70%;
+}
+
+.container {
+    background-color: var(--red-secondary);
+    max-width: 700px;
+    margin: 3rem auto;
+    padding: 1.125rem;
+    border-radius: 1rem;
+}
+
+.action-note {
+    margin: 1rem 0;
+}
+
+.form{
+    display: flex;
+    justify-content: space-around;
+    margin: 1.5rem 0;
+}
+
+.question-box{
+    padding: 1rem;
+    border: 1px dashed var(--red-secondary);
+}
+
+.question{
+    margin-bottom: .5rem;
+}
+
+.option + .option {
+    margin-left: 1rem;
+}
+
+.input {
+    max-width: 5rem;
+    padding: .4rem;
+    margin-bottom: 1rem;
+}
+
+.button{
+    background-color: var(--black-primary);
+    color: var(--white-primary-text);
+    display: block;
+    margin: 2rem auto;
+    padding: .5rem 1rem;
+    border: none;
+    border-radius: .5rem;
+    cursor: pointer;
+}
+
+.message-area {
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+/* smaller screens */
+
+@media (max-width: 750px){
+    .nav-list{
+        max-width: 90%;
+    }
+
+    .container {
+        max-width: 85%;
+    }
+}
+
+@media (max-width: 650px){
+    .nav-list {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media (max-width: 500px){
+    .form {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+}
